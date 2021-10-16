@@ -1,0 +1,17 @@
+<mat-card class="card">
+  <img class="image" mat-card-image src={{item.image}} alt={{item.name}}>
+
+  <mat-card-content>
+    <p>
+      <b>{{item.name}}</b> <span class="item-price">¥{{item.price}}</span>
+      <br />
+      {{item.info}}
+    </p>
+    
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="cart-button">
+    <button  mat-button> <mat-icon>add_shopping_cart</mat-icon></button>
+    </div>
+  </mat-card-actions>
+</mat-card>

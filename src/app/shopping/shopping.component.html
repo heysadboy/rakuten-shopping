@@ -1,0 +1,14 @@
+<mat-toolbar class="shopping-toolbar">
+    <button class="price-sort" (click)="setAsc();">Low Price</button>
+    <button class="price-sort" (click)="setDesc();">High Price</button>
+    <input matInput type="search" class="search-input" placeholder="Search...">
+    <button mat-raised-button class="shopping-button">
+        <span>Proceed Order </span>
+        <mat-icon>shopping_cart</mat-icon>
+    </button>
+</mat-toolbar>
+<mat-grid-list cols="4" rowHeight="4:5">
+    <mat-grid-tile *ngFor="let item of data | sortFilter : sort_type">
+        <app-shopping-item [item]="item"></app-shopping-item>
+    </mat-grid-tile>
+</mat-grid-list>

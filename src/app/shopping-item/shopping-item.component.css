@@ -1,0 +1,13 @@
+.card {
+    margin: 10px;
+}
+
+.cart-button {
+    margin-left: 180px;
+}
+
+.item-price {
+    float: right;
+    color: tomato;
+    font-weight: bold;
+}

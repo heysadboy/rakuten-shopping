@@ -1,0 +1,26 @@
+<mat-toolbar class="inbox-toolbar">
+    <button mat-raised-button class="message-button">
+        <span>New Message </span>
+        <mat-icon>email</mat-icon>
+    </button>
+    <input matInput type="search" class="search-input" placeholder="Search...">
+    <button mat-button (click)="setDeleted()">
+        <span>Delete</span>
+        <mat-icon>delete</mat-icon>
+
+    </button>
+    <button mat-button (click)="setFlagged()">
+        <span>Flag</span>
+        <mat-icon>flag</mat-icon>
+
+    </button>
+    <button mat-button>
+        <span>Archive</span>
+        <mat-icon>archive</mat-icon>
+    </button>
+</mat-toolbar>
+<mat-selection-list [multiple]="false">
+    <mat-list-option *ngFor="let email of emails" [ngStyle]="getStyle(email)">
+        <app-inbox-item [email]="email"></app-inbox-item>
+    </mat-list-option>
+</mat-selection-list>

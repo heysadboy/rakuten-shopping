@@ -1,0 +1,42 @@
+.shopping-button {
+    background-color: #1e88e5;
+    color: white;
+    width: 20%;
+}
+
+.search-input {
+    width: 80%;
+    margin: 0px 10px 0px 10px;
+    height: 36px;
+    padding: 5px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 3px;
+}
+
+.price-sort {
+    background-color: transparent;
+    border-style: none;
+    margin: 0px 5px 0px 5px;
+    padding: 5px;
+}
+
+.price-sort:focus {
+    outline: #ff4081 auto 2px;
+    color: #ff4081;
+    background-color: #fff1f6;
+    margin: 0px 5px 0px 5px;
+    padding: 5px;
+}
+
+.price-sort:hover {
+    cursor: pointer;
+}
+
+.shopping-toolbar {
+    background-color: transparent;
+}
+
+mat-grid-tile {
+    margin-bottom: 100px;
+}

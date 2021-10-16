@@ -1,0 +1,27 @@
+<div class="inbox-item-container">
+    <mat-checkbox class="example-margin" (change)="setSelected();"></mat-checkbox>
+    <button mat-icon-button class="flag-icon">
+        <mat-icon>outlined_flag</mat-icon>
+    </button>
+    <span class="email-title">{{email.title}}</span>
+    <span class="email-body">{{email.body}}</span>
+    <span class="email-date">{{email.date}}</span>
+    <button mat-icon-button class="email-options" [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="deleteItem();">
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+        </button>
+        <button mat-menu-item (click)="setFlag();">
+            <mat-icon>flag</mat-icon>
+            <span>Flag</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>archive</mat-icon>
+            <span>Archive</span>
+        </button>
+    </mat-menu>
+</div>
+<mat-divider></mat-divider>

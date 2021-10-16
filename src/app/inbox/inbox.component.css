@@ -1,0 +1,23 @@
+.message-button {
+    background-color: #1e88e5;
+    color: white;
+    width: 20%;
+}
+
+.search-input {
+    width: 80%;
+    margin: 0px 10px 0px 10px;
+    height: 36px;
+    padding: 5px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 3px;
+}
+
+.inbox-toolbar {
+    background-color: transparent;
+}
+
+mat-selection-list {
+    margin: 10px;
+}
