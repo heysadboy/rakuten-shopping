@@ -1,0 +1,45 @@
+.profile-container {
+    margin: 20px;
+    display: flex;
+}
+
+.profile-image-container {
+    margin: 20px;
+    width: 25%;
+}
+
+.profile-form-container {
+    margin: 20px;
+    width: 75%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.profile-image {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.save-button {
+    background-color: #1e88e5;
+    color: white;
+    margin: 10px;
+    float: right;
+    width: 100px;
+}
+
+.image-button {
+    background-color: #1e88e5;
+    color: white;
+    margin: 0px 0px 0px 50px;
+    text-align: center;
+    display: block;
+}
+
+.form-container {
+    width: 50%;
+}

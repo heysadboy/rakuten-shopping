@@ -1,1 +1,31 @@
-<p>profile works!</p>
+<div class="profile-container">
+    <div class="profile-image-container">
+        <img class="profile-image" src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+            alt="profile photo" />
+        <button mat-raised-button class="image-button">
+            <span>Upload Image</span>
+        </button>
+    </div>
+    <div class="profile-form-container">
+        <form class="form">
+            <mat-form-field class="full-width">
+                <mat-label>Full Name</mat-label>
+                <input matInput placeholder="Full Name">
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Email Address</mat-label>
+                <input matInput placeholder="Email@email.com">
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Desciption</mat-label>
+                <textarea matInput placeholder="Description"></textarea>
+            </mat-form-field>
+
+            <button mat-raised-button class="save-button">
+                <span>Save</span>
+            </button>
+        </form>
+    </div>
+</div>

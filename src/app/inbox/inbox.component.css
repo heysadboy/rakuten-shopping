@@ -4,14 +4,38 @@
     width: 20%;
 }
 
+.form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
 .search-input {
     width: 80%;
     margin: 0px 10px 0px 10px;
-    height: 36px;
-    padding: 5px;
+    height: 35px;
+    background-color: white;
+    padding: 0px 0px 0px 10px;
     border-style: solid;
     border-color: lightgray;
     border-radius: 3px;
+}
+
+.search-button {
+    margin: 0px 0px 10px 0px;
+    color: gray;
+}
+
+.input-box {
+    border-style: none;
+    background-color: white;
+    width: 92%;
+    height: auto;
+    padding: 5px;
+}
+
+.input-box:focus {
+   outline: none;
 }
 
 .inbox-toolbar {

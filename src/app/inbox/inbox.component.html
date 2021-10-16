@@ -3,7 +3,12 @@
         <span>New Message </span>
         <mat-icon>email</mat-icon>
     </button>
-    <input matInput type="search" class="search-input" placeholder="Search...">
+    <div class="search-input">
+        <input matInput type="search" class="input-box" placeholder="Search...">
+        <button mat-button matSufix mat-icon-button class="search-button">
+            <mat-icon>search</mat-icon>
+        </button>
+    </div>
     <button mat-button (click)="setDeleted()">
         <span>Delete</span>
         <mat-icon>delete</mat-icon>
